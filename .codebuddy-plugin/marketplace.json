@@ -1,0 +1,24 @@
+{
+  "name": "my-experts",
+  "description": "my-experts marketplace (user-created)",
+  "plugins": [
+    {
+      "name": "ruankao-pm-system-coach",
+      "source": "./plugins/ruankao-pm-system-coach",
+      "description": "软考项目管理系统教练：覆盖高项（信息系统项目管理师，综合/案例/论文）与中项（系统集成项目管理工程师）全程备考，以及项目经理实战能力提升，按'级别×任务'智能路由。",
+      "version": "1.0.0"
+    },
+    {
+      "name": "suite-dispatcher",
+      "source": "./plugins/suite-dispatcher",
+      "description": "技能总调度：以 BUSINESS-FLOW-MAP 业务流程为路由表，按需读取 ~/.workbuddy/skills 下约 140 个自建技能并执行，无需用户记忆技能名。",
+      "version": "1.2.0"
+    },
+    {
+      "name": "skill-governance-hub",
+      "source": "./plugins/skill-governance-hub",
+      "description": "技能与专家包的全生命周期治理中枢：查找平台能力、判定该不该做、创作、静态质检、行为压测、纳入自有治理体系（编号/目录/变更/决策/来源五表同步），以及外部资源引入的评估与归纳。合并自 skill-finder / baixiaosheng / skill-dev-advisor / skill-smith 四个元能力 Agent。",
+      "version": "1.0.0"
+    }
+  ]
+}

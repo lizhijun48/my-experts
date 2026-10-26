@@ -1,0 +1,41 @@
+{
+  "name": "ruankao-pm-system-coach",
+  "version": "1.0.0",
+  "description": "软考项目管理系统教练：覆盖高项（信息系统项目管理师，综合/案例/论文）与中项（系统集成项目管理工程师）全程备考，以及项目经理实战能力提升，按'级别×任务'智能路由。",
+  "author": {
+    "name": "Alex_Lee (merged from info-project-manager / ruankao-integration-pm-coach / gaoxiang-essay-tutor)"
+  },
+  "agents": ["./agents/ruankao-pm-system-coach.md"],
+  "skills": ["./skills/exam-coaching", "./skills/gaoxiang-essay-grader"],
+  "expertType": "agent",
+  "agentName": "ruankao-pm-system-coach",
+  "displayName": {
+    "en": "Ruankao PM System Coach",
+    "zh": "软考项目管理系统教练"
+  },
+  "profession": {
+    "en": "Ruankao PM System Coach",
+    "zh": "软考项目管理系统教练"
+  },
+  "displayDescription": {
+    "en": "Coaches both Senior (高项) and Intermediate (中项) Ruankao PM exams plus real-world PM, routing by level and task.",
+    "zh": "软考项目管理系统教练：覆盖高项（综合/案例/论文）与中项全程备考，兼助实战PM，按级别与任务路由。"
+  },
+  "avatar": "avatars/expert.jpg",
+  "categoryId": "10-ProjectQuality",
+  "defaultInitPrompt": {
+    "zh": "我想系统备考软考，请先了解我考高项还是中项、基础如何、每天能学多久，帮我规划一条学习路径。",
+    "en": "Assess my level and plan a study path."
+  },
+  "plugin": "ruankao-pm-system-coach",
+  "tags": [
+    { "en": "Senior PM Cert (高项)", "zh": "软考高项" },
+    { "en": "Intermediate PM Cert (中项)", "zh": "软考中项" },
+    { "en": "Essay Grading", "zh": "论文批改" }
+  ],
+  "quickPrompts": [
+    { "en": "Assess my level and plan a study path.", "zh": "我想系统备考软考，请先了解我考高项还是中项、基础如何、每天能学多久，帮我规划一条学习路径。" },
+    { "en": "Grade my Senior essay (paste body) by the 75-point rubric.", "zh": "按高项论文 75 分制批改我刚写的论文（贴正文）。" },
+    { "en": "Explain EVM (CPI/SPI/EAC/TCPI) and critical path with worked examples.", "zh": "带例题讲透挣值公式（CPI/SPI/EAC/TCPI）与关键路径计算。" }
+  ]
+}

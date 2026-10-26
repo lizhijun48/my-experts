@@ -1,0 +1,40 @@
+{
+  "name": "suite-dispatcher",
+  "version": "1.2.0",
+  "description": "技能总调度：以 BUSINESS-FLOW-MAP 业务流程为路由表，按需读取 ~/.workbuddy/skills 下约 140 个自建技能并执行，无需用户记忆技能名。",
+  "author": {
+    "name": "Alex_Lee"
+  },
+  "agents": ["./agents/suite-dispatcher.md"],
+  "expertType": "agent",
+  "agentName": "suite-dispatcher",
+  "displayName": {
+    "en": "Suite Dispatcher",
+    "zh": "技能总调度"
+  },
+  "profession": {
+    "en": "Business-Flow Skill Dispatcher",
+    "zh": "业务流程技能调度器"
+  },
+  "displayDescription": {
+    "en": "Routes your request along business flows and loads only the skills needed, so you never memorize skill names.",
+    "zh": "用业务流程驱动，按需读取你的 140 个自建技能，说业务目标就自动分派执行，无需记技能名。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "10-ProjectQuality",
+  "defaultInitPrompt": {
+    "zh": "我现在要做的业务是：（一句话说清目标），帮我判断该走哪条流程、用哪些技能。",
+    "en": "Here is the business goal in one line — tell me which flow to follow and which skills to use."
+  },
+  "plugin": "suite-dispatcher",
+  "tags": [
+    { "en": "Business Flow Routing", "zh": "业务流路由" },
+    { "en": "Skill Dispatch", "zh": "技能调度" },
+    { "en": "Single Entry Point", "zh": "统一入口" }
+  ],
+  "quickPrompts": [
+    { "en": "Here is the business goal in one line — tell me which flow to follow and which skills to use.", "zh": "我现在要做的业务是：（一句话说清目标），帮我判断该走哪条流程、用哪些技能。" },
+    { "en": "I have a problem but don't know which method or skill fits — diagnose it for me.", "zh": "我遇到一个问题，不知道用哪个方法/技能解决，你帮我判断一下。" },
+    { "en": "Walk me through a full change request process and produce the change request document.", "zh": "帮我把这次变更走完变更流程，并输出变更请求。" }
+  ]
+}

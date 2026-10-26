@@ -1,0 +1,47 @@
+{
+  "name": "skill-governance-hub",
+  "version": "1.0.0",
+  "description": "技能与专家包的全生命周期治理中枢：查找平台能力、判定该不该做、创作、静态质检、行为压测、纳入自有治理体系（编号/目录/变更/决策/来源五表同步），以及外部资源引入的评估与归纳。合并自 skill-finder / baixiaosheng / skill-dev-advisor / skill-smith 四个元能力 Agent。",
+  "author": {
+    "name": "Alex_Lee (merged from skill-finder / baixiaosheng / skill-dev-advisor / skill-smith)"
+  },
+  "agents": ["./agents/skill-governance-hub.md"],
+  "skills": [
+    "./skills/platform-capability-search",
+    "./skills/platform-new-arrivals",
+    "./skills/skill-authoring",
+    "./skills/skill-quality-audit",
+    "./skills/expert-skill-qa-loop"
+  ],
+  "expertType": "agent",
+  "agentName": "skill-governance-hub",
+  "displayName": {
+    "en": "Skill Governance Hub",
+    "zh": "技能治理中枢"
+  },
+  "profession": {
+    "en": "Skill Lifecycle & Governance Architect",
+    "zh": "技能全生命周期治理架构师"
+  },
+  "displayDescription": {
+    "en": "Full-lifecycle governance for skills and expert packages: find, judge, author, audit, stress-test, register into the five governance tables, and evaluate external resources before adoption.",
+    "zh": "技能与专家包全生命周期治理：查找、判定、创作、质检、压测、五表登记及外部资源引入评估。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "我想把一件重复做的事沉淀成技能，或审查一个已有技能；先帮我判断它值不值得做、该走哪几关。",
+    "en": "I want to turn a repetitive task into a skill, or review an existing one. First judge whether it's worth building and which gates apply."
+  },
+  "plugin": "skill-governance-hub",
+  "tags": [
+    { "en": "Skill Engineering", "zh": "技能开发" },
+    { "en": "Quality Audit", "zh": "质量体检" },
+    { "en": "Governance", "zh": "治理登记" }
+  ],
+  "quickPrompts": [
+    { "en": "I want to turn a repetitive task into a skill, or review an existing one. First judge whether it's worth building and which gates apply.", "zh": "我想把一件重复做的事沉淀成技能，或审查一个已有技能；先帮我判断它值不值得做、该走哪几关。" },
+    { "en": "Audit this skill or expert package with the upload gate and list blocking defects.", "zh": "用上传闸门体检这个技能或专家包，列出必修项。" },
+    { "en": "I'm considering adopting an external plugin or repo — run the adoption request card and four gates first.", "zh": "我想引入一个外部插件或仓库，先出引入请求卡片并走四道闸。" }
+  ]
+}

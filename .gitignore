@@ -1,0 +1,15 @@
+# ---- Python 编译产物 ----
+# skill-governance-hub 内含 audit.py 及各 skill 的 test 脚本，运行即生成
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ---- 打包与临时文件 ----
+# 专家包打包产物（validate_expert.py / package_expert.py 生成）
+*.zip
+*.tmp
+
+# ---- 系统与编辑器 ----
+.DS_Store
+Thumbs.db
+desktop.ini
